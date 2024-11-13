@@ -109,7 +109,7 @@ class KaimingNormal(MSRAInitializer):
                 ['masra_init', var.name, 'tmp'])),
                                        shape=var.shape,
                                        dtype=out_dtype,
-                                       type=VarDesc.VarType.LOD_TENSOR,
+                                       type=VarDesc.VarType.DENSE_TENSOR,
                                        persistable=False)
         else:
             out_dtype = var.dtype
@@ -180,7 +180,7 @@ class XavierNormal(XavierInitializer):
                 ['xavier_init', var.name, 'tmp'])),
                                        shape=var.shape,
                                        dtype=out_dtype,
-                                       type=VarDesc.VarType.LOD_TENSOR,
+                                       type=VarDesc.VarType.DENSE_TENSOR,
                                        persistable=False)
         else:
             out_dtype = var.dtype
@@ -246,7 +246,7 @@ class XavierUniform(XavierInitializer):
                 ['xavier_init', var.name, 'tmp'])),
                                        shape=var.shape,
                                        dtype=out_dtype,
-                                       type=VarDesc.VarType.LOD_TENSOR,
+                                       type=VarDesc.VarType.DENSE_TENSOR,
                                        persistable=False)
         else:
             out_dtype = var.dtype
